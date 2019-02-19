@@ -11,23 +11,21 @@ Please contact Matt Cook (mncook@ou.edu) with any questions, concerns, or recomm
 - [Virtual Serendipity: Preserving Embodied Browsing Activity in the 21st Century Research Library](http://www.sciencedirect.com/science/article/pii/S0099133317301520)
 - [A Hub for Innovation and Learning](https://campustechnology.com/Articles/2018/01/31/A-Hub-for-Innovation-and-Learning.aspx?Page=1)
 ****************************************************
-# Portals to the Past: OU Libraries & The Arc/k Project (Archived)
+# Portals to the Past: OU Libraries & The Arc/k Project (OVAL 1.0)
 Join us, in virtual reality, for a guided tour of the Syrian architectural ruins at Palmyra. During this live OVAL event, Professor Amr Al Azm, PhD (Associate Professor at Shawnee State University) will remotely guide a "walk-through" of the Syrian ruins at Palmyra and contextualize the history of the Arch from its construction to present day, offer insight as to why ISIS chose to destroy the site, and discuss and the importance of the Arch and Palmyra as a Syrian cultural heritage icon that can help restore the fabric of a devastated country and people.
 
 This content was generated - via cutting-edge photogrammetric methods - and generously shared by The Arc/k Project. The mission of of the Arc/k project is well summerized on [their website](http://arck-project.org/): "“The Arc/k Project digitally archives that which is too valuable, too important, and too unique to be lost or forgotten. As great as the palaces of Versailles or as humble as a discarded arrowhead, our cultural heritage defines who and what we are – and we can all play a vitally important role in preserving it.”
-# Tuesday, May 8th, at 1pm CST
+# Tuesday, May 8th, 2018 at 1pm CST
 ![Palmyra ScreenCap](https://user-images.githubusercontent.com/7727928/39523859-a9a19dd0-4ddc-11e8-8014-489574b9d1b0.jpg)
 ***************************************************
-# OVAL (LeapMotion + 3D Mouse Controls Only)
-Welcome to OVAL! The Oklahoma Virtual Academic Laboratory. The following guide will assist you with any functionality that OVAL currently has. If you find something that isn’t covered or that is confusing in this guide, please leave a revision suggestion in the comments. OVAL is a VR-Classroom application by University of Oklahoma Libraries encouraging collaboration between academics, professors, and students. Up to twenty users can inhabit the same VR space, import any 3D model on the fly, and analyze 3D models with built-in tools.
+# OVAL 
+Welcome to OVAL! The Oklahoma Virtual Academic Laboratory. The following guide will assist you with any functionality that OVAL currently has. If you find something that isn’t covered or that is confusing in this guide, please leave a revision suggestion in the comments. OVAL is a VR-Classroom application by University of Oklahoma Libraries encouraging collaboration between academics, professors, and students. Up to 100 users can inhabit the same VR space, import any 3D model on the fly, and analyze 3D models with built-in tools.
 
 ### Hardware Dependencies
-OVAL requires the use of an Oculus Rift CV1. A Leap Motion Hand Tracker with a 3Dconnexion SpaceNavigator or Oculus Touch Controllers are required to control the software.
+OVAL requires the use of an Oculus Rift CV1, HTC Vive or Vive Pro and a Windows-based PC that is VR Ready.
 
 ### Known Bugs
-1. Menu text may be garbled after opening the file browser within OVAL. To fix, exit back to the main menu and rejoin OVAL.
-1. Video capture action does not record microphone audio of the user.
-1. Video capture freezes OVAL for 3-5 seconds when first selected. After this, OVAL performs normally.
+1. OVAL may crash while loading models. Please relaunch and try again if this occurs. We are working to remedy it.
 
 # OVAL Setup
 
