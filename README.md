@@ -1,5 +1,17 @@
 # The Oklahoma Virtual Academic Laboratory (OVAL)
-
+## Table of contents:
+- [Overview](#overview)
+- [Known Issues and Bugs](#issues)
+- [OVAL Configuration File](#config)
+  - [Keywords](#config:keywords)
+    - [`Rooms`](#config:keywords:rooms)
+    - [`Color`](#config:keywords:color)
+    - [`UserName`](#config:keywords:username)
+    - [`ModelPath`](#config:keywords:modelpath)
+    - [`ScreenshotPath`](#config:keywords:screenshotpath)
+    - [`VROffset`](#config:keywords:vroffset)
+    - [`DefaultPanels`](#config:keywords:defaultpanels)
+<a name="overview"></a>
 The Oklahoma Virtual Academic Laboratory (OVAL) is a VR-Classroom application designed to encourage remote collaboration between acdaemics. Up to twenty users can inhabit the same VR space, import 3D content, and analyze 3those models with built-in tools.
 
 Please contact Matt Cook (mncook@ou.edu) with any questions, concerns, or recommendations. Enjoy OVAL!
