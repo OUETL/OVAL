@@ -38,9 +38,7 @@ OVAL requires the use of an Oculus Rift CV1, HTC Vive or Vive Pro and a Windows-
 
 ## First-Time Configuration
 
-
 ### Settings Menu
-
 
 #### Room Setup
 * On this screen the room is defined. For multiplayer functionality, all users will need to have the same room defined.
@@ -56,7 +54,7 @@ OVAL requires the use of an Oculus Rift CV1, HTC Vive or Vive Pro and a Windows-
 For a video introduction to OVAL, check out 
 
 ## Compatible File Types
-OVAL can be used to view .obj, .stl, .dae, and .fbx files. (Check with John)
+OVAL can be used to view .obj, .stl, .blend, .fbx, and .dae.
 
 ## Head Movement
 The movement of the field of view is tied to the movement of your head. If you want to look at something, just turn your head.
