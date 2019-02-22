@@ -117,8 +117,6 @@ In OVAL, different modes are used for different types of model inspection. The m
 ### Indicate Function
 The indicate function will cause a ping noise and a dot to alert other participants to whatever is pointed to.
 
-![Indicate Function](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Indicate%20Function%20with%20Close%20Up.jpg?raw=true)
-
 ## Video Capture
 
 ### Utilizing Kaltura and MyMedia
