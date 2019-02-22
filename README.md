@@ -12,9 +12,71 @@
     - [`VROffset`](#config:keywords:vroffset)
     - [`DefaultPanels`](#config:keywords:defaultpanels)
 <a name="overview"></a>
+
+# Overview
 The Oklahoma Virtual Academic Laboratory (OVAL) is a VR-Classroom application designed to encourage remote collaboration between acdaemics. Up to twenty users can inhabit the same VR space, import 3D content, and analyze 3those models with built-in tools.
 
 Please contact Matt Cook (mncook@ou.edu) with any questions, concerns, or recommendations. Enjoy OVAL!
+<a name="issues"></a>
+
+# Known Issues and Bugs
+- Disable all 3D mouse drivers from 3Dconnexion, or problems with the user interface panels can. This typically manifests as spurious joystick input that interferes with the dropdown menu items and scroll lists.
+- Sometimes the Oculus controllers simply disappear. This can be most easily remedied by restarting Windows; restarting the Oculus application alone does not seem to fix this problem.
+<a name="config"></a>
+
+# OVAL Configuration File
+By default, OVAL looks for a file called `OVAL.config.txt` in the directory from which the program was run. This file consists of *comments* and *keyword lines*, with the latter describing additional configuration details that are passed to the OVAL system at startup.
+*Comments* are any line starting with a hash character (`#`), and are ignored by the OVAL software.
+*Keywords* are the first word of a non-comment line, and are used to pass information into the OVAL system at startup.
+<a name="config:keywords"></a>
+## Keywords
+- Keywords are *case insensitive*, but any following text is assumed to be *case sensitive*.
+- To include a space in a sequence of characters on a keyword line (for e.g. file paths etc.), enclose the text in quotation marks `"like this"`.
+<a name="config:keywords:rooms"></a>
+### `Rooms`
+A `Rooms` line specifies a list of one or more default OVAL group rooms presented to the user for convenience. Room names can also be entered by the user at runtime via the OVAL user interface. Example:
+`Rooms Edge iHub "My room name" TestRoom`
+<a name="config:keywords:color"></a>
+### `Color`
+A `Color` line specifies a user-defined color for use in the system. The color is specified by a name, along with red, green, and blue components (with an optional alpha value for transparency). All components are normalized, with values between 0.0 and 1.0; a completely opaque color has an alpha value of 1.0, and a completely transparent color has an alpha value of 0.0. Examples:
+`Color MyRed 0.8 0.0 0.0'
+'Color "Transparent Blue" 0.0 0.0 1.0 0.5 `
+<a name="config:keywords:username"></a>
+### `UserName`
+The `UserName` line specifies the name assigned to the OVAL user at runtime. If no `UserName` line is present in the config file, OVAL uses the name of the current user account on the local computer. The current `UserName` can be overridden at runtime via the OVAL user interface. Example:
+`UserName Me`
+`UserName "Humpty Dumpty"`
+<a name="config:keywords:modelpath"></a>
+### `ModelPath`
+The `ModelPath` line specifies the default directory in which OVAL looks for 3D models (a trailing slash character is optional). This approach ensures that all OVAL clients in a networked session can load the same model files, even where the local file systems differ, provided that the model files are located at the same relative path to `ModelPath`. Where not specified, `ModelPath` defaults to the directory from which the OVAL program was run. Example:
+`ModelPath C:\Desktop\Models\`
+`ModelPath "C:\Desktop\My new models\subdirectory"`
+<a name="config:keywords:screenshotpath"></a>
+### `ScreenshotPath`
+The `ScreenshotPath` line specifies the default directory in which OVAL places screenshots (a trailing slash character is optional). Where not specified, `ScreenshotPath` defaults to [Unity's default output directory](https://docs.unity3d.com/ScriptReference/Application-dataPath.html). Example:
+`ScreenshotPath C:\Desktop\Screenshots\`
+`ScreenshotPath "C:\Desktop\My Screenshots\OVAL\"`
+<a name="config:keywords:vroffset"></a>
+### `VROffset`
+The `VROffset` line can be used to reposition the starting location (i.e., Cartesian x,y,z position) of the user interface. Example:
+`VROffset 1.0 0.0 -2.0`
+<a name="config:keywords:networkregion"></a>
+### `NetworkRegion`
+The `NetworkRegion` line specifies the default geographical server region that OVAL uses to coordinate clients in networked OVAL sessions. This server name corresponds to those used by the [Photon](https://doc.photonengine.com/en-us/realtime/current/connection-and-authentication/regions) middleware. The default value is `us` (specifying a server on the east coast of the U.S.A.). Examples:
+`NetworkRegion us`
+`NetworkRegion cae`
+<a name="config:keywords:defaultpanels"></a>
+### `DefaultPanels`
+The `DefaultPanels` line specifies the OVAL UI panels that are visible to the user by default. Where not specified, the default panels are those visible in the Unity editor when the OVAL software was built. Panel names include:
+- `MoveUIPanel` : Move and show/hide the user interface panels.
+- `NetworkPanel` : Allows the user to join networked OVAL sessions.
+- `MovePanel` : Changes whether the player, model(s), or lights are currently being moved using the controllers.
+- `ModePanel` : Allows the user to select from one of several different modes of operation (e.g. annotate, indicate, measure, etc.)
+- `ModelPanel` : Allows loading, hiding, showing etc. different 3D models.
+Important note: *A `DefaultPanels` line with no panel names specified will show no panels at all*.
+Examples:
+`DefaultPanels MoveUIPanel NetworkPanel ModelPanel MovePanel ModePanel`
+
 # OVAL-related Publications
 - [Multi-Campus VR Session Tours Remote Cave Art](https://campustechnology.com/articles/2017/10/09/multi-campus-vr-session-tours-remote-cave-art.aspx)
 - [Library Journal - University of Oklahoma Expands Networked Virtual Reality Lab](http://lj.libraryjournal.com/2016/08/academic-libraries/university-of-oklahoma-expands-networked-virtual-reality-lab/)
@@ -30,37 +92,6 @@ This content was generated - via cutting-edge photogrammetric methods - and gene
 # Tuesday, May 8th, 2018 at 1pm CST
 ![Palmyra ScreenCap](https://user-images.githubusercontent.com/7727928/39523859-a9a19dd0-4ddc-11e8-8014-489574b9d1b0.jpg)
 ***************************************************
-# OVAL 
-Welcome to OVAL! The Oklahoma Virtual Academic Laboratory. The following guide will assist you in using OVAL to accomplish your research and classroom needs. If you find something that isn’t covered or that is confusing in this guide, please leave a revision suggestion in the comments. OVAL is a VR-Classroom application by University of Oklahoma Libraries encouraging collaboration between academics, professors, and students. Up to 100 users can inhabit the same VR space, import any 3D model on the fly, and analyze 3D models with built-in tools.
-
-### Hardware Dependencies
-OVAL requires the use of an Oculus Rift CV1, HTC Vive or Vive Pro and a Windows-based PC that is VR Ready.
-
-### Known Bugs
-1. OVAL may crash while loading models. Please relaunch and try again if this occurs. We are working to remedy it.
-
-# OVAL Setup
-
-## Download
-* [OVAL with Leap Motion Controls](https://github.com/WalkupAndAway/OVAL-Application/archive/master.zip)
-
-## Install
-1. Extract the files
-1. Run Oval.exe
-
-## First-Time Configuration
-
-### Settings Menu
-
-#### Room Setup
-* On this screen the room is defined. For multiplayer functionality, all users will need to have the same room defined.
-
-![Room Setup Menu](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Room%20Selection.jpg?raw=true)
-
-#### Model Folder Setup
-* On this screen the root folder of the model import function is defined.
-
-![Model Folder Setup Menu](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Model%20Folder%20Menu.jpg?raw=true)
 
 # OVAL Quickstart Guide
 For a video introduction to OVAL, check out 
@@ -68,73 +99,25 @@ For a video introduction to OVAL, check out
 ## Compatible File Types
 OVAL can be used to view .obj, .stl, .blend, .fbx, and .dae.
 
-## Head Movement
+## Controls
+
+### Head Movement
 The movement of the field of view is tied to the movement of your head. If you want to look at something, just turn your head.
 
-### Maneuvering through OVAL menus
-Using OVAL may feel unnatural for the first few minutes, but the hand gestures quickly become intuitive. This section of the guide will cover all gestures needed to utilize OVAL’s many functions. 
-
-### Oculus Rift Controls
-#### Changing Modes
+### Changing Modes
 In OVAL, different modes are used for different types of model inspection. The modes can be changed by hitting the drop down menu seen here: 
+### Oculus Rift Controls
 
+### HTC Vive Controls
 ### Annotate Mode
 
 #### Color Selection
 
-# Using OVAL
-
-## Loading Models
-To load a model into OVAL, click on start from the main screen. After OVAL loads, there will be a menu on the left. Click “Model” then “Import.” This will bring up an explorer window with the folder that is defined in the “Settings” before the OVAL session was launched. To select a model, double-click or click once and select “Okay.”
-
-### I loaded my file, but I can’t find it
-By default, models loaded into OVAL occupy a 1 meter sphere. If you uncheck the resize button, the file can be loaded in its original size. Because of this, sometimes a file can be too small or too far away when it is initially loaded. The first step in troubleshooting this situation is to click the close-button to ensure that the model was properly loaded. A small version of the model should appear very close to your perspective. Click “Close-Up” again to remove this. After verifying that the model is correctly loading, reload the model with the “Resize” button unchecked. 
-
-### Close Up Function
-There is a Close Up Function in the Model Menu. This function brings a small version of the loaded model directly in front of you. This model has a sphere around it and will respond directly to touch. 
-
-![Close Up Function](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Close%20Up.jpg?raw=true)
-
-### Regroup Function
-The regroup function will pull participants back to the room owner.
-
-![Regroup Button](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Regroup%20Menu.jpg?raw=true)
 
 ### Indicate Function
 The indicate function will cause a ping noise and a dot to alert other participants to whatever is pointed to.
 
 ![Indicate Function](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Indicate%20Function%20with%20Close%20Up.jpg?raw=true)
-
-### Annotate Function
-By clicking and holding with the annotate tool selected, "ink" will be dispense out of the hand/controller that is clicking. 
-
-#### Ink Level
-When the ink level is depleted, you will no longer be able to annotate. At this point you can click share to show your annotations and refill your ink. If you do not wish to share you annotations, simply press new.
-
-![Ink Level](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Annotate%20Menu.jpg?raw=true)
-
-### Measure Function
-The measure function will tell you the distance of a straight line. If this is cutting through an object, it will measure the straight line and not around the perimeter.
-
-![Measure Menu](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Measure%20Tool.jpg?raw=true)
-
-### Snapshot Function
-As soon as the snapshot button is clicked, a countdown from 3 will appear. The field of view will be captured at the end of the countdown.
-
-1. ![Snapshot Button](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Snapshot%20Menu.jpg?raw=true)
-2. ![Snapshot Countdown](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Snapshot%20Countdown.jpg?raw=true)
-
-## Settings Menu
-
-![Settings Menu](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Ship%20Settings%20Menu.jpg?raw=true)
-
-### Skybox Settings
-Change the background here.
-
-### Lighting Settings
-View and change lighting options. Intensity increases the amount of light and the axis sliders change the location of the source of the light. 
-
-![Lighting Menu](https://github.com/WalkupAndAway/OVAL-Application/blob/master/Readme_images/Lighting%20Settings.jpg?raw=true)
 
 ## Video Capture
 
