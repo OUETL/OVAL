@@ -85,13 +85,6 @@ Examples:
 - [Virtual Serendipity: Preserving Embodied Browsing Activity in the 21st Century Research Library](http://www.sciencedirect.com/science/article/pii/S0099133317301520)
 - [A Hub for Innovation and Learning](https://campustechnology.com/Articles/2018/01/31/A-Hub-for-Innovation-and-Learning.aspx?Page=1)
 ****************************************************
-# Portals to the Past: OU Libraries & The Arc/k Project (OVAL 1.0)
-Join us, in virtual reality, for a guided tour of the Syrian architectural ruins at Palmyra. During this live OVAL event, Professor Amr Al Azm, PhD (Associate Professor at Shawnee State University) will remotely guide a "walk-through" of the Syrian ruins at Palmyra and contextualize the history of the Arch from its construction to present day, offer insight as to why ISIS chose to destroy the site, and discuss and the importance of the Arch and Palmyra as a Syrian cultural heritage icon that can help restore the fabric of a devastated country and people.
-
-This content was generated - via cutting-edge photogrammetric methods - and generously shared by The Arc/k Project. The mission of of the Arc/k project is well summerized on [their website](http://arck-project.org/): "“The Arc/k Project digitally archives that which is too valuable, too important, and too unique to be lost or forgotten. As great as the palaces of Versailles or as humble as a discarded arrowhead, our cultural heritage defines who and what we are – and we can all play a vitally important role in preserving it.”
-# Tuesday, May 8th, 2018 at 1pm CST
-![Palmyra ScreenCap](https://user-images.githubusercontent.com/7727928/39523859-a9a19dd0-4ddc-11e8-8014-489574b9d1b0.jpg)
-***************************************************
 
 # OVAL Quickstart Guide
 For a video introduction to OVAL, check out 
@@ -124,15 +117,6 @@ In order to utilize voice capture, OU students/faculty/staff should
 
 ## Instructions for Multiplayer Sessions
 Up to 100 users can inhabit the same VR space, import any 3D model on the fly, and analyze 3D models with built-in tools. To set up a multiplayer session, each user will need to ensure that the room name on their OVAL session matches with all other users they would like to work with in the same VR space. 
-
-### Room Ownership
-The first user to “enter” a room by beginning a session and loading a model will be in control of the room. This user will control the following functions: 
-Model Loading
-Model Scaling and rotation
-Model tour function
-Ship visibility
-Skybox background choice
-Light functions (X, Y, Z axis control of light source and intensity)
 
 ### Voice Chat
 When you enter into a room with another user, voice chat is automatically enabled. If you aren’t hearing the other person, check your sound source in windows. Make sure the sound is being pushed to the Rift Headphones and that it is turned up. 
