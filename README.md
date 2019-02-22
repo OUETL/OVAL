@@ -1,6 +1,6 @@
 # The Oklahoma Virtual Academic Laboratory (OVAL)
 
-The Oklahoma Virtual Academic Laboratory (OVAL) is a prototype VR-Classroom application designed to encourage remote collaboration between acdaemics. Up to twenty users can inhabit the same VR space, import 3D content, and analyze 3those models with built-in tools.
+The Oklahoma Virtual Academic Laboratory (OVAL) is a VR-Classroom application designed to encourage remote collaboration between acdaemics. Up to twenty users can inhabit the same VR space, import 3D content, and analyze 3those models with built-in tools.
 
 Please contact Matt Cook (mncook@ou.edu) with any questions, concerns, or recommendations. Enjoy OVAL!
 # OVAL-related Publications
