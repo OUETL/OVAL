@@ -6,7 +6,7 @@ The Oklahoma Virtual Academic Laboratory (OVAL) is a VR-Classroom application de
 ### HTC Vive Controls
 
 ## Menu
-Welcome to OVAL! OVAL uses one slim, movable menu to provide you with many functional tools to help analyze or display your 3D content. ![OVAL Menu](Menu.png)
+Welcome to OVAL! OVAL uses one slim, movable menu to provide you with many functional tools to help analyze or display your 3D content. ![OVAL Menu](Menu.png =250x250)
 
 ### Moving the Menu
 
