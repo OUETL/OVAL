@@ -5,8 +5,12 @@ The Oklahoma Virtual Academic Laboratory (OVAL) is a VR-Classroom application de
 When controling OVAL, you will use the laser coming off of your controler as a cursor. You will "click" on menu buttons by pointing your controlers laser at the button and clicking with the "trigger" listed in the diagrams below. OVAL is designed to be used with one controller, so the controls are mirrored on the right and left. 
 
 ### View Reset
+#### Oculus Touch
+Hold down the Grip button and push B or Y depending on your controller (left or right). 
+#### HTC Vive
 
 ### Vertical Strafing
+In order to strafe vertically, simply hold the grips while moving the joystick up or down.
 
 ### Oculus Touch Controls
 ![Oculus Touch Controller Diagram](oculuscontrollers.png)
