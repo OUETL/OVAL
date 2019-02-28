@@ -7,7 +7,7 @@ When controling OVAL, you will use the laser coming off of your controler as a c
 ### Oculus Touch Controls
 ![Oculus Touch Controller Diagram](oculuscontrollers.png)
 ### HTC Vive Controls
-![HTC Vive Controller Diagram](vivecontrollers.png)
+![HTC Vive Controller Diagram](vivecontroller.png)
 
 ## Menu
 Welcome to OVAL! OVAL uses one slim, movable menu to provide you with many functional tools to help analyze or display your 3D content. 
