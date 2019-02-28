@@ -49,7 +49,7 @@ This mode allows you to annotate on the model. Your laser will paint on the firs
 Indicate mode allows you to "ping" the attention of other uses. This gives an audible chime and shows an expansion of the bead at the end of your laser that is visible to all users in the room. 
 
 #### Screenshot Mode
-This mode allows you to take pictures within OVAL. This images can be found in your Documents folder. 
+This mode allows you to take pictures within OVAL. This images can be found in your Documents folder.
 
 #### Measure Mode
 Measure mode allows you to place to dots on or around your model. OVAL will tell you the straight-line distance between those two points to assist in measuring the model. 
