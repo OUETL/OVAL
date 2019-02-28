@@ -19,7 +19,7 @@ Welcome to OVAL! OVAL uses one slim, movable menu to provide you with many funct
 ![OVAL Menu](Menu.png)
 
 ### Moving the Menu
-The "Move This" button on the top-left of the moveable menu will allow you to place the menu anywhere you like for your viewing convenience. 
+The "Move This" button on the top-left of the menu will allow you to place the menu anywhere you like for your viewing convenience. 
 
 ### Room Controls
 OVAL is networked and allows users to meet and view 3D models in an online lab. As long as users have the same "room" defined, they will show up in the same space. One user will have complete controls. Any other user will have limited controls. 
