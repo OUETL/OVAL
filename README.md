@@ -3,7 +3,7 @@ The Oklahoma Virtual Academic Laboratory (OVAL) is a VR-Classroom application de
 
 ## Controls
 ### Oculus Touch Controls
-![Oculus Touch Controller Diagram](oculuscontroller.png)
+![Oculus Touch Controller Diagram](Oculuscontrollers.png)
 ### HTC Vive Controls
 ![HTC Vive Controller Diagram](vivecontrollers.png)
 
