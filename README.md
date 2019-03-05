@@ -13,7 +13,7 @@ Hold down the Grip button and push B or Y depending on your controller (left or 
 In order to strafe vertically, simply hold the grips while moving the joystick up or down.
 
 ### Oculus Touch Controls
-![Oculus Touch Controller Diagram](oculuscontrollers.png)
+![Oculus Touch Controller Diagram](oculuscontroller.png)
 ### HTC Vive Controls
 ![HTC Vive Controller Diagram](vivecontroller.png)
 
