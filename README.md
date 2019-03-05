@@ -12,7 +12,7 @@ Welcome to OVAL! OVAL uses one slim, movable menu to provide you with many funct
 
 Menu Feature | Notes
 ------------ | -------------
-![Move Panel](MovePanel.png) | The "Move This" button on the top-left of the menu will allow you to place the menu anywhere you like for your viewing convenience. 
+![Move Panel](MovePanel.PNG) | The "Move This" button on the top-left of the menu will allow you to place the menu anywhere you like for your viewing convenience. 
 Content in the first column | ![OVAL Menu](Menu.png)
 ![OVAL Menu](Menu.png) | asdfa
 
