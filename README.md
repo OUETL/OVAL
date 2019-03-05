@@ -10,11 +10,11 @@ The Oklahoma Virtual Academic Laboratory (OVAL) is a VR-Classroom application de
 ## Menu
 Welcome to OVAL! OVAL uses one slim, movable menu to provide you with many functional tools to help analyze or display your 3D content. 
 
-Menu Feature |
+Menu Feature | Notes
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-![OVAL Menu](Menu.png)
+![OVAL Menu](Menu.png) | ![OVAL Menu](Menu.png)
+Content in the first column | ![OVAL Menu](Menu.png)
+![OVAL Menu](Menu.png) | asdfa
 
 ### Moving the Menu
 The "Move This" button on the top-left of the menu will allow you to place the menu anywhere you like for your viewing convenience. 
