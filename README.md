@@ -12,11 +12,10 @@ Welcome to OVAL! OVAL uses one slim, movable menu to provide you with many funct
 
 Menu Feature | Notes
 ------------ | -------------
-![Move Panel](MovePanel.PNG) | The "Move This" button on the top-left of the menu will allow you to place the menu anywhere you like for your viewing convenience. 
-Content in the first column | ![OVAL Menu](Menu.png)
-![OVAL Menu](Menu.png) | asdfa
+![Move UI Panel](MoveUIPanel.PNG) | The "Move This" button on the top-left of the menu will allow you to place the menu anywhere you like for your viewing convenience. 
+![Network Panel](NetworkPanel.PNG) | OVAL is networked and allows users to meet and view 3D models in an online lab. As long as users have the same "room" defined, they will show up in the same space. One user will have complete controls. Any other user will have limited controls. 
+![Move Panel](MovePanel.PNG) | This allows you to switch between light, model, and self movement.
 
-### Moving the Menu
 
 
 ### Room Controls
